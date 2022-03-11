@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css";
+import particles from "./assets/particles.json";
+
+import ParticleBackground from "./components/ParticleBackground";
+import NavBar from "./components/NavBar";
+import SocialMedia from "./components/social-link/SocialMedia";
+import EmailLink from "./components/email-link/EmailLink";
+import IntroAboutMe from "./components/IntroAboutMe";
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ParticleBackground />
+      <NavBar />
+      <SocialMedia />
+      <EmailLink />
+
+      <div id="body-content">
+        <IntroAboutMe />
+        <AboutMe />
+        <Projects />
+        <ContactMe />
+
+        <div className="footer">
+          <p>Created with &#9829; by Javier Arango</p>
+          <p>Thank You for Your Visit</p>
+        </div>
+      </div>
     </div>
   );
 }

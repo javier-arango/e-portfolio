@@ -1,0 +1,40 @@
+#intro-about-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 0px;
+}
+
+.about-container {
+  max-width: 1000px;
+}
+
+.greetings {
+  color: #e9d8a6;
+  line-height: 1.1;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0px 0px 30px 4px;
+}
+
+.my-name {
+  color: #f7ede2;
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.small-fact {
+  color: #ddb892;
+  font-size: clamp(40px, 8vw, 80px);
+  margin: 10px 0px 0px 0px;
+  line-height: 0.9;
+}
+
+.big-fact {
+  margin: 20px 0px 0px;
+  color: #ddb892;
+  font-size: 20px;
+  max-width: 540px;
+}

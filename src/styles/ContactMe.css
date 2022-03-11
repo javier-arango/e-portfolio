@@ -1,0 +1,20 @@
+.contact {
+  max-width: 600px;
+  margin: 0px auto 100px;
+  text-align: center;
+  padding: 80px 0px;
+}
+
+.contact-title {
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 0px 0px 10px;
+}
+
+.contact-description {
+  margin: 0px;
+}
+
+.contact-button {
+  margin: 50px 0px 0px;
+  padding: 12px 16px;
+}

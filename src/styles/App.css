@@ -1,0 +1,51 @@
+body {
+  background-color: #001219;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  color: #f7ede2;
+}
+
+#body-content {
+  padding: 0px 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+.sections {
+  margin: 0px auto;
+  padding: 100px 0px;
+}
+
+.section-heading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 32px);
+  white-space: nowrap;
+  color: #ddb892;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #ddb892;
+}
+
+.footer {
+  padding: 16px;
+  text-align: center;
+  min-height: 70px;
+  padding: 15px;
+}
+
+.footer p {
+  margin: 5px;
+  font-size: 15px;
+}

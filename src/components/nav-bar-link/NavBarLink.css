@@ -1,0 +1,21 @@
+.navbar-dark .navbar-nav .nav-link {
+  color: #e9d8a6;
+  margin: 0 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ddb892;
+}
+
+.btn {
+  color: #e9d8a6;
+  border-color: #e9d8a6;
+  margin: 0 1.5rem;
+  padding: 8px;
+}
+
+.btn:hover {
+  color: #f0efeb;
+  background-color: #ddb892;
+  border-color: #ddb892;
+}

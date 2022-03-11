@@ -1,0 +1,13 @@
+.technology-list {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.technology-list::before {
+  content: "▶";
+  position: absolute;
+  left: 0px;
+}

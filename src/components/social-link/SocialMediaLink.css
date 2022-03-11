@@ -1,0 +1,18 @@
+.link {
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  filter: invert(100%) sepia(20%) saturate(5705%) hue-rotate(305deg)
+    brightness(92%) contrast(88%);
+}
+
+.icons:hover {
+  filter: invert(100%) sepia(0%) saturate(7307%) hue-rotate(116deg)
+    brightness(85%) contrast(124%);
+}
