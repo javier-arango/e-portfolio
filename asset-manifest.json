@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/ePortafolio/static/css/main.fec96a45.css",
-    "main.js": "/ePortafolio/static/js/main.df373fb0.js",
-    "static/js/787.fca7e99e.chunk.js": "/ePortafolio/static/js/787.fca7e99e.chunk.js",
-    "static/media/faceDetection.png": "/ePortafolio/static/media/faceDetection.5670c6cbc9e3be05ff1a.png",
-    "static/media/housePrediction.png": "/ePortafolio/static/media/housePrediction.08663feb1fe78fa3df2c.png",
-    "static/media/classAttenderBot.jpg": "/ePortafolio/static/media/classAttenderBot.ababa12f75eef79d77c6.jpg",
-    "static/media/profile-image.svg": "/ePortafolio/static/media/profile-image.ec126eea9653234049fa86192f43a42c.svg",
-    "static/media/minesweper.png": "/ePortafolio/static/media/minesweper.fde134e979cd40baa0b8.png",
-    "static/media/logo.svg": "/ePortafolio/static/media/logo.b71f022f7af81bcacb66563a0271a2f9.svg",
-    "index.html": "/ePortafolio/index.html",
-    "static/media/github.svg": "/ePortafolio/static/media/github.5f5f55995387b7d8689484e37a687d1f.svg",
-    "static/media/twitter.svg": "/ePortafolio/static/media/twitter.1a832bb1499d0209d4abab38a40a7e7c.svg",
-    "static/media/linkedin.svg": "/ePortafolio/static/media/linkedin.35e825d0be9371fea9e555f8e3d7af86.svg",
-    "main.fec96a45.css.map": "/ePortafolio/static/css/main.fec96a45.css.map",
-    "main.df373fb0.js.map": "/ePortafolio/static/js/main.df373fb0.js.map",
-    "787.fca7e99e.chunk.js.map": "/ePortafolio/static/js/787.fca7e99e.chunk.js.map"
+    "main.css": "/static/css/main.fec96a45.css",
+    "main.js": "/static/js/main.dcfc01b6.js",
+    "static/js/787.fca7e99e.chunk.js": "/static/js/787.fca7e99e.chunk.js",
+    "static/media/faceDetection.png": "/static/media/faceDetection.5670c6cbc9e3be05ff1a.png",
+    "static/media/housePrediction.png": "/static/media/housePrediction.08663feb1fe78fa3df2c.png",
+    "static/media/classAttenderBot.jpg": "/static/media/classAttenderBot.ababa12f75eef79d77c6.jpg",
+    "static/media/profile-image.svg": "/static/media/profile-image.ec126eea9653234049fa86192f43a42c.svg",
+    "static/media/minesweper.png": "/static/media/minesweper.fde134e979cd40baa0b8.png",
+    "static/media/logo.svg": "/static/media/logo.b71f022f7af81bcacb66563a0271a2f9.svg",
+    "index.html": "/index.html",
+    "static/media/github.svg": "/static/media/github.5f5f55995387b7d8689484e37a687d1f.svg",
+    "static/media/twitter.svg": "/static/media/twitter.1a832bb1499d0209d4abab38a40a7e7c.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.35e825d0be9371fea9e555f8e3d7af86.svg",
+    "main.fec96a45.css.map": "/static/css/main.fec96a45.css.map",
+    "main.dcfc01b6.js.map": "/static/js/main.dcfc01b6.js.map",
+    "787.fca7e99e.chunk.js.map": "/static/js/787.fca7e99e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fec96a45.css",
-    "static/js/main.df373fb0.js"
+    "static/js/main.dcfc01b6.js"
   ]
 }
