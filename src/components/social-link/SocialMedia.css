@@ -1,9 +1,11 @@
+/* Social media for left side */
 .content-container-left {
   width: 40px;
   position: fixed;
   bottom: 0px;
   left: 20px;
   right: auto;
+  z-index: 3;
 }
 
 /* Add vertical line after icons */
@@ -16,7 +18,7 @@
   background-color: #ddb892;
 }
 
-.social-content {
+.social-content-left {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +27,23 @@
   list-style: none;
 }
 
-.social-content li:last-of-type {
+.social-content-left li:last-of-type {
   margin-bottom: 20px;
+}
+
+/* Social media for footer */
+.content-container-button {
+  display: block;
+  width: 100%;
+  max-width: 270px;
+  margin: 0px auto 10px;
+}
+
+.social-content-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 }

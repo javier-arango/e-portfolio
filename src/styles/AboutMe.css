@@ -24,16 +24,6 @@
   list-style: none;
 }
 
-.frameworks-ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
-  gap: 0px 10px;
-  padding: 0px;
-  margin: 20px 0px 0px;
-  overflow: hidden;
-  list-style: none;
-}
-
 .programing-languages h4 {
   font-size: 15px;
 }
@@ -42,10 +32,6 @@
   font-size: 15px;
 }
 
-/* .about-me-text {
-  max-width: 300px;
-} */
-
-/* .profile {
-  max-width: 300px;
-} */
+.profile-image {
+  filter: drop-shadow(0 0 1rem #ddb892);
+}

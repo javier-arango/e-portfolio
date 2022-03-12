@@ -1,25 +1,17 @@
 import "./SocialMedia.css";
 import SocialMediaLink from "./SocialMediaLink";
-import Linkedin from "./assets/linkedin.svg";
-import Github from "./assets/github.svg";
-import Twitter from "./assets/twitter.svg";
 
-const SocialMedia = () => {
+const SocialMedia = (props) => {
   return (
-    <div className="content-container-left">
-      <ul className="social-content">
-        <SocialMediaLink
-          icon={Linkedin}
-          link="http://linkedin.com/in/javier-arango"
-        />
-        <SocialMediaLink
-          icon={Github}
-          link="https://github.com/javier-arango"
-        />
-        <SocialMediaLink
-          icon={Twitter}
-          link="https://twitter.com/Javier_Arango_"
-        />
+    <div className={`content-container-${props.type}`}>
+      <ul className={`social-content-${props.type}`}>
+        {props.socials.map((social) => (
+          <SocialMediaLink
+            key={social.id}
+            icon={social.icon}
+            link={social.link}
+          />
+        ))}
       </ul>
     </div>
   );

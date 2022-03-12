@@ -32,9 +32,9 @@ const AboutMe = () => {
               When I came to the United States, I was learning English and many
               programming languages and technologies that I could possibly
               learn. After my hard work and dedication, I graduated high school
-              on time and joined the Top 5 University in the USA. I'm currently
-              studying Computer Science at the University of Florida, where I'm
-              doing my third year.
+              on time and joined the Top 5 Universities in the USA. I'm
+              currently studying Computer Science at the University of Florida,
+              where I'm doing my third year.
             </p>
             <p className="technology-message">
               I have been using the following technologies recently:

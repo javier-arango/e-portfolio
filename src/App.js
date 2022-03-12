@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import particles from "./assets/particles.json";
+import socialMediaData from "./data/socialMediaData";
 
 import ParticleBackground from "./components/ParticleBackground";
 import NavBar from "./components/NavBar";
@@ -15,7 +15,7 @@ function App() {
     <div>
       <ParticleBackground />
       <NavBar />
-      <SocialMedia />
+      <SocialMedia type="left" socials={socialMediaData} />
       <EmailLink />
 
       <div id="body-content">
@@ -25,8 +25,14 @@ function App() {
         <ContactMe />
 
         <div className="footer">
-          <p>Created with &#9829; by Javier Arango</p>
-          <p>Thank You for Your Visit</p>
+          <SocialMedia type="button" socials={socialMediaData} />
+          <p className="my-credit">Created with &#9829; by Javier Arango</p>
+          <p className="credits">
+            Inspired by{" "}
+            <a href="https://github.com/bchiang7/v4" target="_blank">
+              Brittany Chiang
+            </a>
+          </p>
         </div>
       </div>
     </div>

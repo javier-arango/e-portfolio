@@ -5,7 +5,7 @@ import ProjectItem from "./project-item/ProjectItem";
 const Projects = () => {
   return (
     <div id="projects" className="sections">
-      <div className="container">
+      <div className="container project-container">
         <h2 className="section-heading">Featured Projects</h2>
         {projectsData.map((data) => (
           <ProjectItem

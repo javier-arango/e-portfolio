@@ -1,16 +1,18 @@
 import NavBarLink from "./nav-bar-link/NavBarLink";
 import Logo from "../assets/logo.svg";
+import resume from "../assets/resume.pdf";
 import "../styles/NavBar.css";
 
 const NavBar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
         <div className="container-fluid">
           {/* Left Side Logo */}
           <a className="navbar-brand" href="">
             <img src={Logo} width="100px" />
           </a>
+
           {/* Button when collapsing */}
           <button
             className="navbar-toggler"
@@ -23,6 +25,7 @@ const NavBar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
           {/* Nav Navigation */}
           <div className="collapse navbar-collapse" id="navbarNav">
             {/* Center Side | Nav Bar content */}
@@ -33,7 +36,7 @@ const NavBar = () => {
               {/* Right Side | Resume */}
               <NavBarLink
                 name="Resume"
-                link="../assets/resume.pdf"
+                link={resume}
                 button="yes"
                 target="_blank"
               />

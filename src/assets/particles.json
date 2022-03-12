@@ -44,12 +44,12 @@
       "enable": true,
       "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.03,
+      "opacity": 0.1,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1,
+      "speed": 0.3,
       "direction": "none",
       "random": true,
       "straight": false,

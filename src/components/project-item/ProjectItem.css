@@ -1,5 +1,6 @@
 .project-detail {
   margin: 0px 0px 100px;
+  width: 100%;
 }
 
 .project-description {
@@ -50,9 +51,8 @@
 }
 
 .project-image {
+  width: 300px;
   height: 400px;
-  width: 100%;
-  margin-left: 10px;
 }
 
 .project-image a img {
