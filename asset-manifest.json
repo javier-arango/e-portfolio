@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.50756ad0.css",
-    "main.js": "/static/js/main.5801a715.js",
+    "main.css": "/static/css/main.c35ee555.css",
+    "main.js": "/static/js/main.18086114.js",
     "static/js/787.fca7e99e.chunk.js": "/static/js/787.fca7e99e.chunk.js",
     "static/media/faceDetection.png": "/static/media/faceDetection.5670c6cbc9e3be05ff1a.png",
     "static/media/housePrediction.png": "/static/media/housePrediction.08663feb1fe78fa3df2c.png",
@@ -14,12 +14,12 @@
     "static/media/github.svg": "/static/media/github.5f5f55995387b7d8689484e37a687d1f.svg",
     "static/media/twitter.svg": "/static/media/twitter.1a832bb1499d0209d4abab38a40a7e7c.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.35e825d0be9371fea9e555f8e3d7af86.svg",
-    "main.50756ad0.css.map": "/static/css/main.50756ad0.css.map",
-    "main.5801a715.js.map": "/static/js/main.5801a715.js.map",
+    "main.c35ee555.css.map": "/static/css/main.c35ee555.css.map",
+    "main.18086114.js.map": "/static/js/main.18086114.js.map",
     "787.fca7e99e.chunk.js.map": "/static/js/787.fca7e99e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50756ad0.css",
-    "static/js/main.5801a715.js"
+    "static/css/main.c35ee555.css",
+    "static/js/main.18086114.js"
   ]
 }
