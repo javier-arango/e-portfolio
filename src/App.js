@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/App.css";
 import socialMediaData from "./data/socialMediaData";
 
@@ -29,7 +30,11 @@ function App() {
           <p className="my-credit">Created with &#9829; by Javier Arango</p>
           <p className="credits">
             Inspired by{" "}
-            <a href="https://github.com/bchiang7/v4" target="_blank">
+            <a
+              href="https://github.com/bchiang7/v4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Brittany Chiang
             </a>
           </p>

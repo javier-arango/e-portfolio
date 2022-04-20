@@ -1,3 +1,4 @@
+import React from "react";
 import "./NavBarLink.css";
 
 const NavBarLink = (props) => {

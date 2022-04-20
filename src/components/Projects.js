@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/Projects.css";
 import projectsData from "../data/projectsData";
 import ProjectItem from "./project-item/ProjectItem";

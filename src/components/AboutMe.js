@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/AboutMe.css";
 import profileImg from "../assets/profile-image.svg";
 import TechnologyList from "./technology-list/TechnologyList";

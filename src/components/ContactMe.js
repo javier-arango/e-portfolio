@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/ContactMe.css";
 
 const ContactMe = () => {
@@ -14,7 +15,10 @@ const ContactMe = () => {
           href="mailto:javierarango.business@gmail.com"
           className="btn btn-outline-primary contact-button"
         >
-          👋 Say Hello
+          <span role="img" alt="waive hand emoji" aria-label="emoji">
+            👋
+          </span>{" "}
+          Say Hello
         </a>
       </div>
     </div>

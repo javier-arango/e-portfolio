@@ -1,3 +1,4 @@
+import React from "react";
 import "./ProjectItem.css";
 import ProjectTechItem from "./ProjectTechItem";
 
@@ -8,12 +9,12 @@ const ProjectItem = (props) => {
         {/* Project image */}
         <div className="col project-image">
           {props.link.length === 0 ? (
-            <a>
-              <img src={props.image} />
+            <a href="#projects">
+              <img src={props.image} alt="showcase for the project I did." />
             </a>
           ) : (
-            <a target="_blank" href={props.link}>
-              <img src={props.image} />
+            <a target="_blank" rel="noopener noreferrer" href={props.link}>
+              <img src={props.image} alt="" />
             </a>
           )}
         </div>
@@ -22,9 +23,9 @@ const ProjectItem = (props) => {
           {/* Project name */}
           <h3 className="project-name">
             {props.link.length === 0 ? (
-              <a>{props.name}</a>
+              <a href="#projects">{props.name}</a>
             ) : (
-              <a href={props.link} target="_blank">
+              <a href={props.link} target="_blank" rel="noopener noreferrer">
                 {props.name}
               </a>
             )}
@@ -45,8 +46,13 @@ const ProjectItem = (props) => {
             </div>
             {/* Learn more button */}
             <div className="project-link">
-              {props.link.length != 0 ? (
-                <a href={props.link} target="_blank" className="btn">
+              {props.link.length !== 0 ? (
+                <a
+                  href={props.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
                   Learn More
                 </a>
               ) : (

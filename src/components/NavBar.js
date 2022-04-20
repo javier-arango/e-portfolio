@@ -1,3 +1,4 @@
+import React from "react";
 import NavBarLink from "./nav-bar-link/NavBarLink";
 import Logo from "../assets/logo.svg";
 import resume from "../assets/resume.pdf";
@@ -8,8 +9,8 @@ const NavBar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
         {/* Left Side Logo */}
-        <a className="navbar-brand" href="">
-          <img src={Logo} width="100px" />
+        <a className="navbar-brand" href="#">
+          <img src={Logo} width="100px" alt="logo for the website" />
         </a>
 
         {/* Button when collapsing */}

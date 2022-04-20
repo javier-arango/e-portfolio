@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/ParticleBackground.css";
 import Particles from "react-tsparticles";
 import particles from "../assets/particles.json";

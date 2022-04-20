@@ -1,3 +1,4 @@
+import React from "react";
 import "./TechnologyList.css";
 
 const TechnologyList = (props) => {

@@ -1,3 +1,4 @@
+import React from "react";
 import "./SocialMedia.css";
 import SocialMediaLink from "./SocialMediaLink";
 

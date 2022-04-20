@@ -1,3 +1,4 @@
+import React from "react";
 import "./EmailLink.css";
 
 const EmailLink = () => {
@@ -8,6 +9,7 @@ const EmailLink = () => {
           className="email"
           href="mailto:javierarango.business@gmail.com"
           target="_blank"
+          rel="noopener noreferrer"
         >
           javierarango.business@gmail.com
         </a>
