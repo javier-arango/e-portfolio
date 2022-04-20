@@ -1,6 +1,22 @@
+let id = 0; // Id increase by 1
 const projectsData = [
   {
-    id: "p2",
+    id: `${id++}`,
+    name: "Stock Market Suggestions",
+    image: require("../assets/Projects Img/stockMarketSuggestions.png"),
+    description: `Developed a platform working as a team that suggests the safest stocks to invest in the long term. 
+    I was in charge of creating all the backend logic, including basic foundation for processing data, implementation of 
+    QuickSort and RadixSort algorithms to sort 100,000 data points, and setting up the server.`,
+    technology: [
+      { id: "t0", name: "React.js" },
+      { id: "t1", name: "Typescript" },
+      { id: "t2", name: "Express.js" },
+      { id: "t3", name: "Node.js" },
+    ],
+    link: "https://github.com/javier-arango/stock-market-suggestions",
+  },
+  {
+    id: `${id++}`,
     name: "Housing Price Prediction",
     image: require("../assets/Projects Img/housePrediction.png"),
     description: `Housing Price Prediction is a Jupiter Notebook program 
@@ -17,7 +33,7 @@ const projectsData = [
     link: "https://github.com/javier-arango/gainesville-rentals",
   },
   {
-    id: "p4",
+    id: `${id++}`,
     name: "Minesweeper Game",
     image: require("../assets/Projects Img/minesweper.png"),
     description: `I recreated the classic game Minesweeper with all the 
@@ -33,7 +49,7 @@ const projectsData = [
     link: "",
   },
   {
-    id: "p1",
+    id: `${id++}`,
     name: "Real-Time Face Detection",
     image: require("../assets/Projects Img/faceDetection.png"),
     description: `Developed a real-time face detection program using 
@@ -47,7 +63,7 @@ const projectsData = [
     link: "https://github.com/javier-arango/opencv-face-detection",
   },
   {
-    id: "p3",
+    id: `${id++}`,
     name: "Class Attender Bot",
     image: require("../assets/Projects Img/classAttenderBot.jpg"),
     description: `I developed a python bot to join online meetings on a 

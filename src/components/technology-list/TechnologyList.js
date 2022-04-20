@@ -18,4 +18,5 @@ const TechnologyList = (props) => {
     </li>
   );
 };
+
 export default TechnologyList;

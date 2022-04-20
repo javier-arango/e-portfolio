@@ -6,8 +6,9 @@ const ContactMe = () => {
       <div className="container contact">
         <h2 className="contact-title">Contact Me</h2>
         <p className="contact-description">
-          Please send me an email if you have a question or simply want to say
-          hi, and I'll do my best to respond!
+          I'm open to any new opportunities for work or new starting projects.
+          Please send me an email if you have a question or want to say hi, and
+          I'll do my best to respond!
         </p>
         <a
           href="mailto:javierarango.business@gmail.com"

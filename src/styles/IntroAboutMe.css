@@ -22,12 +22,12 @@
 .my-name {
   color: #f7ede2;
   margin: 0px;
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(40px, 7vw, 80px);
 }
 
 .small-fact {
   color: #ddb892;
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(40px, 7vw, 80px);
   margin: 10px 0px 0px 0px;
   line-height: 0.9;
 }

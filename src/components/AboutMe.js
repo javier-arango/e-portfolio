@@ -1,19 +1,7 @@
 import "../styles/AboutMe.css";
 import profileImg from "../assets/profile-image.svg";
 import TechnologyList from "./technology-list/TechnologyList";
-
-const programingLanguages = [
-  { id: "e0", name: "C++", iconName: "cplusplus" },
-  { id: "e1", name: "Python" },
-  { id: "e2", name: "Java" },
-  { id: "e3", name: "Javascript" },
-  { id: "e4", name: "HTML", iconName: "html5" },
-  { id: "e5", name: "CSS", iconName: "css3" },
-  { id: "e6", name: "MySQL" },
-  { id: "e7", name: "Swift" },
-  { id: "e8", name: "React" },
-  { id: "e9", name: "Node.js", iconName: "nodejs" },
-];
+import programingLanguages from "../data/programingLanguagesData";
 
 const AboutMe = () => {
   return (
@@ -34,7 +22,7 @@ const AboutMe = () => {
               learn. After my hard work and dedication, I graduated high school
               on time and joined the Top 5 Universities in the USA. I'm
               currently studying Computer Science at the University of Florida,
-              where I'm doing my third year.
+              where I'm doing my Bachelor's degree.
             </p>
             <p className="technology-message">
               I have been using the following technologies recently:
