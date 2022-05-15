@@ -1,5 +1,5 @@
 import React from "react";
-import "./SocialMediaLink.css";
+import styles from "./SocialMediaLink.module.css";
 
 const SocialMediaLink = (props) => {
   return (
@@ -8,9 +8,13 @@ const SocialMediaLink = (props) => {
         href={props.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="link"
+        className={`link-icon ${styles.link}`}
       >
-        <img src={props.icon} className="icons" alt="social media icons" />
+        <img
+          src={props.icon}
+          className={styles.icons}
+          alt="social media icons"
+        />
       </a>
     </li>
   );

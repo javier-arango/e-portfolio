@@ -1,12 +1,15 @@
 import React from "react";
-import "../styles/Projects.css";
+import styles from "../styles/Projects.module.css";
 import projectsData from "../data/projectsData";
 import ProjectItem from "./project-item/ProjectItem";
 
 const Projects = () => {
   return (
-    <div id="projects" className="sections">
-      <div className="container project-container">
+    <>
+      <div
+        id="projects"
+        className={`container sections ${styles["project-container"]}`}
+      >
         <h2 className="section-heading">Featured Projects</h2>
         {projectsData.map((data) => (
           <ProjectItem
@@ -19,7 +22,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

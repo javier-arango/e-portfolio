@@ -1,9 +1,9 @@
 import React from "react";
-import "./TechnologyList.css";
+import styles from "./TechnologyList.module.css";
 
 const TechnologyList = (props) => {
   return (
-    <li className="technology-list">
+    <li className={styles["technology-list"]}>
       {/* Icon */}
       <i
         className={

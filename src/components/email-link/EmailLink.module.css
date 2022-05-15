@@ -1,0 +1,43 @@
+.email-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.email {
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  position: relative;
+}
+
+.content-container-right {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 20px;
+  z-index: 10;
+}
+
+/* Add vertical line after icons */
+.content-container-right::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100px;
+  margin: 0px auto;
+  background-color: #ddb892;
+}
+
+/* Screen width 991px max */
+@media screen and (max-width: 991px) {
+  .content-container-right {
+    display: none;
+  }
+}

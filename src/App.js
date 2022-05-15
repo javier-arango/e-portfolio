@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/App.css";
+import "./styles/GlobalStyles.css";
 import socialMediaData from "./data/socialMediaData";
 
 import ParticleBackground from "./components/ParticleBackground";
@@ -10,10 +10,11 @@ import IntroAboutMe from "./components/IntroAboutMe";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <>
       <ParticleBackground />
       <NavBar />
       <SocialMedia type="left" socials={socialMediaData} />
@@ -24,23 +25,9 @@ function App() {
         <AboutMe />
         <Projects />
         <ContactMe />
-
-        <div className="footer">
-          <SocialMedia type="button" socials={socialMediaData} />
-          <p className="my-credit">Created with &#9829; by Javier Arango</p>
-          <p className="credits">
-            Inspired by{" "}
-            <a
-              href="https://github.com/bchiang7/v4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Brittany Chiang
-            </a>
-          </p>
-        </div>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }
 

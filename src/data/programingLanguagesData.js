@@ -1,18 +1,17 @@
-let id_ = 0; // Id increase by 1
+import { v4 as uuidv4 } from "uuid";
 
 const programingLanguages = [
-  { id: `l-${id_++}`, name: "C++", iconName: "cplusplus" },
-  { id: `l-${id_++}`, name: "Python" },
-  { id: `l-${id_++}`, name: "Java" },
-  { id: `l-${id_++}`, name: "JavaScript" },
-  { id: `l-${id_++}`, name: "TypeScript" },
-  { id: `l-${id_++}`, name: "HTML", iconName: "html5" },
-  { id: `l-${id_++}`, name: "CSS", iconName: "css3" },
-  { id: `l-${id_++}`, name: "MySQL" },
-  { id: `l-${id_++}`, name: "Swift" },
-  { id: `l-${id_++}`, name: "React" },
-  { id: `l-${id_++}`, name: "Node.js", iconName: "nodejs" },
-  { id: `l-${id_++}`, name: "Git", iconName: "git" },
+  { id: uuidv4(), name: "C++", iconName: "cplusplus" },
+  { id: uuidv4(), name: "Python" },
+  { id: uuidv4(), name: "Java" },
+  { id: uuidv4(), name: "JavaScript" },
+  { id: uuidv4(), name: "TypeScript" },
+  { id: uuidv4(), name: "HTML", iconName: "html5" },
+  { id: uuidv4(), name: "CSS", iconName: "css3" },
+  { id: uuidv4(), name: "MySQL" },
+  { id: uuidv4(), name: "React" },
+  { id: uuidv4(), name: "Node.js", iconName: "nodejs" },
+  { id: uuidv4(), name: "Git", iconName: "git" },
 ];
 
 export default programingLanguages;

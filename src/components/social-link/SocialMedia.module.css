@@ -31,6 +31,10 @@
   margin-bottom: 20px;
 }
 
+.content-container-button {
+  display: none !important;
+}
+
 /* Social media for footer */
 .content-container-button {
   display: block;
@@ -46,4 +50,15 @@
   padding: 0px;
   margin: 0px;
   list-style: none;
+}
+
+/* Screen width 991px max */
+@media screen and (max-width: 991px) {
+  .content-container-left {
+    display: none;
+  }
+
+  .content-container-button {
+    display: block !important;
+  }
 }

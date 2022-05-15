@@ -1,0 +1,10 @@
+.link {
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+}

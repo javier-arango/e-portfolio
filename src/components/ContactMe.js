@@ -1,19 +1,19 @@
 import React from "react";
-import "../styles/ContactMe.css";
+import styles from "../styles/ContactMe.module.css";
 
 const ContactMe = () => {
   return (
-    <div id="contact-me">
-      <div className="container contact">
-        <h2 className="contact-title">Contact Me</h2>
-        <p className="contact-description">
-          I'm open to any new opportunities for work or new starting projects.
-          Please send me an email if you have a question or want to say hi, and
+    <>
+      <div id="contact-me" className={`container ${styles["contact"]}`}>
+        <h2 className={styles["contact-title"]}>Contact Me</h2>
+        <p className={styles["contact-description"]}>
+          I am open to new opportunities for work or starting projects. Please
+          send me an email if you have any questions or just want to say hi, and
           I'll do my best to respond!
         </p>
         <a
           href="mailto:javierarango.business@gmail.com"
-          className="btn btn-outline-primary contact-button"
+          className={`btn btn-outline-primary ${styles["contact-button"]}`}
         >
           <span role="img" alt="waive hand emoji" aria-label="emoji">
             👋
@@ -21,7 +21,7 @@ const ContactMe = () => {
           Say Hello
         </a>
       </div>
-    </div>
+    </>
   );
 };
 

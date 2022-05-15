@@ -1,35 +1,46 @@
 import React from "react";
-import "../styles/IntroAboutMe.css";
+import styles from "../styles/IntroAboutMe.module.css";
 
 const IntroAboutMe = () => {
   return (
-    <div id="intro-about-me">
-      <div className="container about-container">
-        <div className="col">
+    <>
+      <div
+        id={styles["intro-about-me"]}
+        className={`container ${styles["about-container"]}`}
+      >
+        <div className="row">
           {/* Greetings */}
-          <div className="row">
-            <h1 className="h1 greetings"> Hi, my name is</h1>
+          <div className="col">
+            <h1 className={styles["greetings"]}> Hi, my name is</h1>
           </div>
+
+          <div className="w-100"></div>
+
           {/* My name */}
-          <div className="row">
-            <h2 className="h2 my-name"> Javier Arango.</h2>
+          <div className="col">
+            <h2 className={styles["my-name"]}> Javier Arango.</h2>
           </div>
+
+          <div className="w-100"></div>
+
           {/* Small fact */}
-          <div className="row">
-            <h3 className="h3 small-fact"> I build things for fun.</h3>
+          <div className="col">
+            <h3 className={styles["small-fact"]}> I build things for fun.</h3>
           </div>
+
+          <div className="w-100"></div>
+
           {/* Big fact */}
-          <div className="row">
-            <p className="big-fact">
-              {" "}
+          <div className="col">
+            <p className={styles["big-fact"]}>
               I am a third-year Computer Science undergraduate student at the
-              University of Florida. Currently learning new technologies and
-              getting ideas to start new projects.{" "}
+              University of Florida, currently learning new technologies
+              and working on new projects.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

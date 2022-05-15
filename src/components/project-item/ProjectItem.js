@@ -1,16 +1,16 @@
 import React from "react";
-import "./ProjectItem.css";
+import styles from "./ProjectItem.module.css";
 import ProjectTechItem from "./ProjectTechItem";
 
 const ProjectItem = (props) => {
   return (
-    <div>
-      <div className="row project-detail">
+    <>
+      <div className={`row ${styles["project-detail"]}`}>
         {/* Project image */}
-        <div className="col project-image">
+        <div className={`col ${styles["project-image"]}`}>
           {props.link.length === 0 ? (
             <a href="#projects">
-              <img src={props.image} alt="showcase for the project I did." />
+              <img src={props.image} alt="showcase of the project" />
             </a>
           ) : (
             <a target="_blank" rel="noopener noreferrer" href={props.link}>
@@ -19,50 +19,60 @@ const ProjectItem = (props) => {
           )}
         </div>
 
-        <div className="col">
+        {/* Project details */}
+        <div className={`col ${styles["project-details"]}`}>
           {/* Project name */}
-          <h3 className="project-name">
-            {props.link.length === 0 ? (
-              <a href="#projects">{props.name}</a>
-            ) : (
-              <a href={props.link} target="_blank" rel="noopener noreferrer">
-                {props.name}
-              </a>
-            )}
-          </h3>
-
           <div className="col">
-            {/* Peoject description */}
-            <div className="col project-description">
-              <p>{props.description}</p>
-            </div>
-            {/* Technology used names */}
-            <div className="col project-tech-use">
-              <ul className="tech-list">
-                {props.techName.map((tech) => (
-                  <ProjectTechItem key={tech.id} name={tech.name} />
-                ))}
-              </ul>
-            </div>
-            {/* Learn more button */}
-            <div className="project-link">
-              {props.link.length !== 0 ? (
+            <h3 className={styles["project-name"]}>
+              {props.link.length === 0 ? (
+                <a className="link" href="#projects">
+                  {props.name}
+                </a>
+              ) : (
                 <a
+                  className="link"
                   href={props.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn"
                 >
-                  Learn More
+                  {props.name}
                 </a>
-              ) : (
-                <p></p>
               )}
-            </div>
+            </h3>
+          </div>
+
+          {/* Project description */}
+          <div className={`col ${styles["project-description"]}`}>
+            <p>{props.description}</p>
+          </div>
+
+          {/* Technology used */}
+          <div className={`col ${styles["project-tech-use"]}`}>
+            <ul className={`${styles["tech-list"]}`}>
+              {props.techName.map((tech) => (
+                <ProjectTechItem key={tech.id} name={tech.name} />
+              ))}
+            </ul>
+          </div>
+
+          {/* Learn more | button */}
+          <div className={`col ${styles["project-link"]}`}>
+            {props.link.length !== 0 ? (
+              <a
+                href={props.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline-primary"
+              >
+                Learn More
+              </a>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

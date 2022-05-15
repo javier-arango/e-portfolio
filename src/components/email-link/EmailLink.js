@@ -1,12 +1,12 @@
 import React from "react";
-import "./EmailLink.css";
+import styles from "./EmailLink.module.css";
 
 const EmailLink = () => {
   return (
-    <div className="content-container-right">
-      <div className="email-content">
+    <div className={styles["content-container-right"]}>
+      <div className={styles["email-content"]}>
         <a
-          className="email"
+          className={`link ${styles.email}`}
           href="mailto:javierarango.business@gmail.com"
           target="_blank"
           rel="noopener noreferrer"

@@ -1,0 +1,20 @@
+.footer {
+  text-align: center;
+  min-height: 70px;
+  padding: 30px;
+  color: #ddb892;
+}
+
+.my-credit {
+  margin: 0px;
+  font-size: 15px;
+}
+
+.credits {
+  font-size: 13px;
+  margin: 10px 0px 0px;
+}
+
+.credits a {
+  text-decoration: none;
+}

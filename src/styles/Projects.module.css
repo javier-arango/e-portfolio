@@ -1,0 +1,14 @@
+/* Screen width 991px max */
+@media screen and (max-width: 991px) {
+  .project-container {
+    max-width: 970px;
+    margin: 0px 20px 0px 20px;
+  }
+}
+
+/* Screen width 768px max */
+@media screen and (max-width: 768px) {
+  .project-container {
+    margin: 0px;
+  }
+}
