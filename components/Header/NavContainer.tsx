@@ -8,7 +8,7 @@ const NavContainer = ({ children, bgColor }: Props) => {
 
   return (
     <nav
-      className={`${
+      className={`sticky top-0 ${
         bgColor ? `dark:bg-${bgColor}` : "dark:bg-gray-900"
       } p-3 bg-gray-50 rounded border-gray-200 dark:border-gray-700`}
     >

@@ -1,22 +1,27 @@
-export type CreditsProps = {
-  name: string;
-  link: string;
+import { Alignment } from "../../model/types";
+import { ICredits } from "../../model/interfaces";
+
+type Props = {
+  credits: ICredits;
+  alignItems?: Alignment;
 };
 
-const FooterCredits = ({ name, link }: CreditsProps) => {
+const FooterCredits = ({ credits, alignItems }: Props) => {
   return (
     <>
-      <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-        Created with &#9829; by{" "}
-        <a
-          className="hover:underline hover:text-white"
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {name}
-        </a>
-      </span>
+      <div className={`flex justify-${alignItems ? alignItems : "center"}`}>
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          Created with &#9829; by{" "}
+          <a
+            className="hover:underline hover:text-white"
+            href={credits.authorsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {credits.authorsName}
+          </a>
+        </span>
+      </div>
     </>
   );
 };

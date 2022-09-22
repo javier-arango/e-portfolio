@@ -1,11 +1,8 @@
 import Link from "next/link";
 
-export type NavItemProps = {
-  name: string;
-  destination: string;
-};
+import { INavItem } from "../../model/interfaces";
 
-const NavItem = ({ name, destination }: NavItemProps) => {
+const NavItem = ({ name, destination }: INavItem) => {
   return (
     <>
       <li>

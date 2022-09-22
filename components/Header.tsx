@@ -1,9 +1,11 @@
 import NavContainer from "./Header/NavContainer";
-import Logo, { LogoProps } from "./Header/Logo";
+import Logo from "./Header/Logo";
 import NavItemContainer from "./Header/NavItemContainer";
-import NavItem, { NavItemProps } from "./Header/NavItem";
+import NavItem from "./Header/NavItem";
 
-const navLogo: LogoProps = {
+import { ILogo, INavItem } from "../model/interfaces";
+
+const navLogo: ILogo = {
   image: "/logo.svg",
   alt: "Javier Arango Logo",
   destination: "/",
@@ -11,7 +13,7 @@ const navLogo: LogoProps = {
   height: 20,
 };
 
-const navItems: NavItemProps[] = [
+const navItems: INavItem[] = [
   { name: "Home", destination: "/" },
   { name: "About", destination: "/about" },
   { name: "Experience", destination: "/experience" },

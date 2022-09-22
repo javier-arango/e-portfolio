@@ -1,10 +1,5 @@
 import { useState } from "react";
 
-type Props = {
-  children?: JSX.Element | JSX.Element[];
-  bgColor?: string;
-};
-
 const showMenuIcons = (isHidden: boolean): JSX.Element => {
   return (
     <>
@@ -39,6 +34,11 @@ const showMenuIcons = (isHidden: boolean): JSX.Element => {
       )}
     </>
   );
+};
+
+type Props = {
+  children?: JSX.Element | JSX.Element[];
+  bgColor?: string;
 };
 
 const NavItemContainer = ({ children, bgColor }: Props) => {

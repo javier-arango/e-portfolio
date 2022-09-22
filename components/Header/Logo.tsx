@@ -1,15 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export type LogoProps = {
-  image: string;
-  alt: string;
-  destination: string;
-  width: number;
-  height: number;
-};
+import { ILogo } from "../../model/interfaces";
 
-const Logo = ({ image, alt, destination, width, height }: LogoProps) => {
+const Logo = ({ image, alt, destination, width, height }: ILogo) => {
   return (
     <>
       {/* Page Logo */}

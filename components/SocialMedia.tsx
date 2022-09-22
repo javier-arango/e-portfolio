@@ -1,23 +1,25 @@
 import SocialMediaContainer from "./SocialMedia/SocialMediaContainer";
 import SocialMediaIconContainer from "./SocialMedia/SocialMediaIconContainer";
-import SocialMediaIcon, {
-  SocialMediaIconProps,
-} from "./SocialMedia/SocialMediaIcon";
+import SocialMediaIcon from "./SocialMedia/SocialMediaIcon";
+
+import { ISocialMedia } from "../model/interfaces";
+import { Alignment } from "../model/types";
 
 type Props = {
-  socialMedia: SocialMediaIconProps[];
+  socialMedia: ISocialMedia[];
+  alignItems?: Alignment;
 };
 
-const SocialMedia = ({ socialMedia }: Props) => {
+const SocialMedia = ({ socialMedia, alignItems }: Props) => {
   if (!socialMedia) return null;
 
   return (
     <>
       <SocialMediaContainer>
-        <SocialMediaIconContainer>
+        <SocialMediaIconContainer alignIcon={alignItems}>
           {socialMedia.map((social) => (
-            <li key={social.icon}>
-              <SocialMediaIcon icon={social.icon} link={social.link} />
+            <li key={social.iconName}>
+              <SocialMediaIcon iconName={social.iconName} link={social.link} />
             </li>
           ))}
         </SocialMediaIconContainer>

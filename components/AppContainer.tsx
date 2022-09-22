@@ -34,7 +34,7 @@ const AppContainer = ({ className, children }: Props) => {
   };
 
   return (
-    <div className={className || "dark:bg-neutral-900 w-full"}>
+    <>
       <Head>
         {/* Website Title */}
         <title>{meta.title}</title>
@@ -70,7 +70,7 @@ const AppContainer = ({ className, children }: Props) => {
       <main className={className || "dark:bg-neutral-900 w-full"}>
         {children}
       </main>
-    </div>
+    </>
   );
 };
 
