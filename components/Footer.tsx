@@ -1,8 +1,7 @@
-import FooterContainer from "./Footer/FooterContainer";
-import FooterCredits from "./Footer/FooterCredits";
+import { FooterContainer, FooterCredits } from "./Footer/index";
 import SocialMedia from "./SocialMedia";
 
-import { ISocialMedia, ICredits } from "../model/interfaces";
+import { ISocialMedia, ICredits } from "../model/index";
 
 const socialMediaData: ISocialMedia[] = [
   {

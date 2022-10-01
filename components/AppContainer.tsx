@@ -67,7 +67,7 @@ const AppContainer = ({ className, children }: Props) => {
       </Head>
 
       {/* Main Content */}
-      <main className={className || "dark:bg-neutral-900 w-full"}>
+      <main className={`"dark:bg-neutral-900 w-full ${className}`}>
         {children}
       </main>
     </>

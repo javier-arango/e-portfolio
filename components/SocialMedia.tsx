@@ -1,9 +1,10 @@
-import SocialMediaContainer from "./SocialMedia/SocialMediaContainer";
-import SocialMediaIconContainer from "./SocialMedia/SocialMediaIconContainer";
-import SocialMediaIcon from "./SocialMedia/SocialMediaIcon";
+import {
+  SocialMediaContainer,
+  SocialMediaIconContainer,
+  SocialMediaIcon,
+} from "./SocialMedia/index";
 
-import { ISocialMedia } from "../model/interfaces";
-import { Alignment } from "../model/types";
+import { ISocialMedia, Alignment } from "../model/index";
 
 type Props = {
   socialMedia: ISocialMedia[];

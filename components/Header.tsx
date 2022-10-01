@@ -1,9 +1,7 @@
-import NavContainer from "./Header/NavContainer";
-import Logo from "./Header/Logo";
-import NavItemContainer from "./Header/NavItemContainer";
-import NavItem from "./Header/NavItem";
+import { NavContainer, Logo, NavItemContainer, NavItem } from "./Header/index";
+import SwitchTheme from "./SwitchTheme";
 
-import { ILogo, INavItem } from "../model/interfaces";
+import { ILogo, INavItem } from "../model/index";
 
 const navLogo: ILogo = {
   image: "/logo.svg",
@@ -21,11 +19,9 @@ const navItems: INavItem[] = [
   { name: "Contact", destination: "/contact" },
 ];
 
-const bgColor: string = "gray-900";
-
 const Header = () => {
   return (
-    <NavContainer bgColor={bgColor}>
+    <NavContainer>
       <Logo
         image={navLogo.image}
         alt={navLogo.alt}
@@ -34,7 +30,7 @@ const Header = () => {
         height={navLogo.height}
       />
 
-      <NavItemContainer bgColor={bgColor}>
+      <NavItemContainer>
         {navItems.map((item) => (
           <NavItem
             name={item.name}

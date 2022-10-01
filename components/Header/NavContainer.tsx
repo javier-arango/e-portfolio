@@ -1,20 +1,16 @@
 type Props = {
   children?: JSX.Element | JSX.Element[];
-  bgColor?: string;
+  className?: string;
 };
 
-const NavContainer = ({ children, bgColor }: Props) => {
+const NavContainer = ({ children, className }: Props) => {
   if (!children) return null;
 
   return (
     <nav
-      className={`sticky top-0 ${
-        bgColor ? `dark:bg-${bgColor}` : "dark:bg-gray-900"
-      } p-3 bg-gray-50 rounded border-gray-200 dark:border-gray-700`}
+      className={`sticky top-0 p-3 rounded container flex flex-wrap justify-between items-center mx-auto ${className}`}
     >
-      <div className="container flex flex-wrap justify-between items-center mx-auto">
-        {children}
-      </div>
+      {children}
     </nav>
   );
 };

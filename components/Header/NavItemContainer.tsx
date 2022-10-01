@@ -6,29 +6,31 @@ const showMenuIcons = (isHidden: boolean): JSX.Element => {
       {!isHidden ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6 text-white"
-          viewBox="0 0 20 20"
-          fill="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          className="w-6 h-6"
         >
           <path
-            fillRule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clipRule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
           />
         </svg>
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6 text-white"
-          fill="none"
+          className="w-6 h-6"
           viewBox="0 0 24 24"
+          fill="currentColor"
+          stroke-width="2"
           stroke="currentColor"
-          strokeWidth={2}
         >
           <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
           />
         </svg>
       )}
@@ -38,10 +40,10 @@ const showMenuIcons = (isHidden: boolean): JSX.Element => {
 
 type Props = {
   children?: JSX.Element | JSX.Element[];
-  bgColor?: string;
+  className?: string;
 };
 
-const NavItemContainer = ({ children, bgColor }: Props) => {
+const NavItemContainer = ({ children, className }: Props) => {
   const [isMenuHidden, setIsMenuHidden] = useState(true);
 
   if (!children) return null;
@@ -65,14 +67,12 @@ const NavItemContainer = ({ children, bgColor }: Props) => {
       <div
         className={`${
           isMenuHidden ? "hidden" : "block"
-        } w-full md:block md:w-auto`}
+        } w-full md:block md:w-auto ${className}`}
         id="navbar-solid-bg"
       >
         {/* Nav Bar Items list */}
         <ul
-          className={`${
-            bgColor ? `dark:bg-${bgColor}` : "dark:bg-gray-900"
-          } flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent md:dark:bg-transparent dark:border-gray-700`}
+          className={`flex flex-col md:items-center sm:items-start mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent md:dark:bg-transparent`}
         >
           {children}
         </ul>
