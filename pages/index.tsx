@@ -1,17 +1,16 @@
 import type { NextPage } from "next";
-import AppContainer from "../components/AppContainer";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import SectionContainer from "../components/SectionContainer";
+import { AppContainer, Hero } from "../components/index";
 
 const Home: NextPage = () => {
+  const meta = {
+    title: "Javier Arango",
+    description:
+      "Javier Arango is a third-year Computer Science undergraduate student at the University of Florida.",
+  };
+
   return (
-    <AppContainer>
-      <Header />
-
-      <SectionContainer />
-
-      <Footer />
+    <AppContainer title={meta.title} description={meta.description}>
+      <Hero />
     </AppContainer>
   );
 };

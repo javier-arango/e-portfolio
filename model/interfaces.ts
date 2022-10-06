@@ -15,8 +15,8 @@ export interface ILogo {
 }
 
 export interface INavItem {
-  name: string;
-  destination: string;
+  name?: string;
+  destination?: string;
 }
 
 export type ICredits = {

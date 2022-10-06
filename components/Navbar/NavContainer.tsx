@@ -8,7 +8,7 @@ const NavContainer = ({ children, className }: Props) => {
 
   return (
     <nav
-      className={`sticky top-0 p-3 rounded container flex flex-wrap justify-between items-center mx-auto ${className}`}
+      className={`${className} p-3 rounded container flex flex-wrap justify-between items-center mx-auto`}
     >
       {children}
     </nav>

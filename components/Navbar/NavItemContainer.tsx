@@ -67,7 +67,7 @@ const NavItemContainer = ({ children, className }: Props) => {
       <div
         className={`${
           isMenuHidden ? "hidden" : "block"
-        } w-full md:block md:w-auto ${className}`}
+        } ${className} w-full md:block md:w-auto`}
         id="navbar-solid-bg"
       >
         {/* Nav Bar Items list */}

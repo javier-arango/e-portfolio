@@ -1,5 +1,4 @@
-import { NavContainer, Logo, NavItemContainer, NavItem } from "./Header/index";
-import SwitchTheme from "./SwitchTheme";
+import { NavContainer, Logo, NavItemContainer, NavItem } from "./Navbar/index";
 
 import { ILogo, INavItem } from "../model/index";
 
@@ -19,7 +18,7 @@ const navItems: INavItem[] = [
   { name: "Contact", destination: "/contact" },
 ];
 
-const Header = () => {
+const Navbar = () => {
   return (
     <NavContainer>
       <Logo
@@ -43,4 +42,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

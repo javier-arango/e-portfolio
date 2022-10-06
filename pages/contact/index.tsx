@@ -1,8 +1,9 @@
 import Link from "next/link";
-const AboutMe = () => {
+
+const Contact = () => {
   return (
     <>
-      <h1>About Me</h1>
+      <h1>Contact Me</h1>
       <h2>
         <Link href="/">Back to home</Link>
       </h2>
@@ -10,4 +11,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Contact;

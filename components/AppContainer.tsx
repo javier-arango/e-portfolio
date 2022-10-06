@@ -1,19 +1,20 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 type Props = {
   className?: string;
+  title?: string;
+  description?: string;
   children: JSX.Element | JSX.Element[];
 };
 
-const AppContainer = ({ className, children }: Props) => {
+const AppContainer = ({ title, description, className, children }: Props) => {
   const router = useRouter();
 
   const meta = {
-    title: "Javier Arango",
     author: "Javier Arango",
-    description:
-      "Javier Arango is a third-year Computer Science undergraduate student at the University of Florida.",
     keywords:
       "Javier Arango, Javier Arango Software Engineer, Javier Arango Computer Science, Javier Arango Computer Science Student, Arango Javier",
     favicon: "/favicon.ico",
@@ -37,11 +38,11 @@ const AppContainer = ({ className, children }: Props) => {
     <>
       <Head>
         {/* Website Title */}
-        <title>{meta.title}</title>
+        <title>{title}</title>
 
         {/* Meta Data */}
         <meta name="author" content={meta.author} />
-        <meta name="description" content={meta.description} />
+        <meta name="description" content={description} />
         <meta name="keywords" content={meta.keywords} />
 
         {/* Open Graph Protocol */}
@@ -55,8 +56,8 @@ const AppContainer = ({ className, children }: Props) => {
         {/* Social Media Sharing */}
         <meta name="twitter:card" content={meta.twitter.card} />
         <meta name="twitter:site" content={meta.twitter.site} />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={meta.og.image} />
 
         {/* Help Google choose the right canonical URL for your duplicate pages */}
@@ -67,8 +68,10 @@ const AppContainer = ({ className, children }: Props) => {
       </Head>
 
       {/* Main Content */}
-      <main className={`"dark:bg-neutral-900 w-full ${className}`}>
+      <main className={`w-full font-mono ${className}`}>
+        <Navbar />
         {children}
+        <Footer />
       </main>
     </>
   );
