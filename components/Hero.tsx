@@ -1,11 +1,8 @@
-import { SectionContainer } from "./index";
-import { Button } from "./General/index";
-import { IoMdOpen } from "react-icons/io";
-
-import profileEmoji from "../public/assets/profile-emoji.png";
+import { SectionContainer, Button } from "./General/index";
 import Image from "next/image";
 
-//const profileEmoji = "/assets/profile-emoji.png";
+import { IoMdOpen } from "react-icons/io";
+import profileEmoji from "../public/assets/profile-emoji.png";
 
 const openResume = () => {
   window.open(`/resume.pdf`, "_blank");

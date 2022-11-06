@@ -1,42 +1,5 @@
 import { useState } from "react";
-
-const showMenuIcons = (isHidden: boolean): JSX.Element => {
-  return (
-    <>
-      {!isHidden ? (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      ) : (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          stroke-width="2"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
+import { CgMenuRight, CgClose } from "react-icons/cg";
 
 type Props = {
   children?: JSX.Element | JSX.Element[];
@@ -60,7 +23,7 @@ const NavItemContainer = ({ children, className }: Props) => {
         onClick={() => setIsMenuHidden(!isMenuHidden)}
       >
         {/* Show Menu Icons When is in Mobile */}
-        {showMenuIcons(isMenuHidden)}
+        {!isMenuHidden ? <CgClose size={30} /> : <CgMenuRight size={30} />}
       </button>
 
       {/* Nav Bar Items Container */}
