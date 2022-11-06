@@ -2,6 +2,11 @@ import { SectionContainer } from "./index";
 import { Button } from "./General/index";
 import { IoMdOpen } from "react-icons/io";
 
+import profileEmoji from "../public/assets/profile-emoji.png";
+import Image from "next/image";
+
+//const profileEmoji = "/assets/profile-emoji.png";
+
 const openResume = () => {
   window.open(`/resume.pdf`, "_blank");
 };
@@ -40,9 +45,9 @@ const Hero = () => {
         </div>
 
         {/* Right side container */}
-        <div className="hidden lg:block relative w-full md:w-1/2 -mr-40">
+        <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mx-auto">
           <div className="w-3/4">
-            <img src={"/profile-emoji.png"} alt="Javier Arango profile image" />
+            <Image src={profileEmoji} alt="Javier Arango profile image" />
           </div>
         </div>
       </div>
