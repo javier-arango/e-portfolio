@@ -19,7 +19,18 @@ export interface INavItem {
   destination?: string;
 }
 
-export type ICredits = {
+export interface ICredits {
   authorsName: string;
   authorsLink: string;
-};
+}
+
+export interface IButton {
+  cta: string;
+  bgColor?: string;
+  btRadius?: string;
+  textColor?: string;
+  width?: number;
+  className?: string;
+  iconSide?: "left" | "right";
+  onClick?: () => void;
+}
