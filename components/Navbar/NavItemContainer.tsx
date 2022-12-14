@@ -17,7 +17,9 @@ const NavItemContainer = ({ children, className }: Props) => {
       <button
         data-collapse-toggle="navbar-solid-bg"
         type="button"
-        className="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+        className="inline-flex justify-center items-center ml-3 text-gray-400 
+        rounded-lg md:hidden hover:text-gray-900 focus:outline-none 
+        focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
         aria-controls="navbar-solid-bg"
         aria-expanded="false"
         onClick={() => setIsMenuHidden(!isMenuHidden)}
@@ -35,7 +37,9 @@ const NavItemContainer = ({ children, className }: Props) => {
       >
         {/* Nav Bar Items list */}
         <ul
-          className={`flex flex-col md:items-center sm:items-start mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent md:dark:bg-transparent`}
+          className={`flex flex-col md:items-center sm:items-start mt-4 rounded-lg 
+          md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium 
+          md:border-0 md:bg-transparent md:dark:bg-transparent`}
         >
           {children}
         </ul>

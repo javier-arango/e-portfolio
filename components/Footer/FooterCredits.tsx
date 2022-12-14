@@ -1,6 +1,5 @@
 import { Alignment } from "../../model/types";
 import { ICredits } from "../../model/interfaces";
-import { RoughNotation } from "react-rough-notation";
 
 type Props = {
   credits: ICredits;

@@ -4,6 +4,8 @@ import Image from "next/image";
 import { IoMdOpen } from "react-icons/io";
 import profileEmoji from "../public/assets/profile-emoji.png";
 
+import { RoughNotation } from "react-rough-notation";
+
 const openResume = () => {
   window.open(`/resume.pdf`, "_blank");
 };
@@ -27,7 +29,9 @@ const Hero = () => {
           </h1>
 
           <p className="text-1xl sm:text-2xl md:text-3xl lg:text-4xl mb-6 font-medium">
-            Passionate Software Engineer
+            <RoughNotation type="underline" show>
+              Passionate Software Engineer
+            </RoughNotation>
           </p>
 
           <p className="text-sm mb-8 font-thin text-gray-400 sm:text-sm md:text-md lg:text-lg">
@@ -37,6 +41,7 @@ const Hero = () => {
           </p>
 
           <Button cta="Resume" onClick={openResume} className="mb-3">
+            {/* Open Icon */}
             <IoMdOpen size={20} />
           </Button>
         </div>

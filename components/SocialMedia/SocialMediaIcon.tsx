@@ -4,10 +4,12 @@ import { SocialIcons } from "../../model/types";
 import { ISocialMedia } from "../../model/interfaces";
 
 function IconSelector(iconName: SocialIcons, iconSize?: number) {
+  const hoverEffect = "hover:bg-yellow-500 rounded-md py-1 hover:text-gray-50";
+
   const icons = {
-    twitter: <FaTwitter size={iconSize} />,
-    linkedinIn: <FaLinkedinIn size={iconSize} />,
-    github: <FaGithubAlt size={iconSize} />,
+    twitter: <FaTwitter size={iconSize} className={hoverEffect} />,
+    linkedinIn: <FaLinkedinIn size={iconSize} className={hoverEffect} />,
+    github: <FaGithubAlt size={iconSize} className={hoverEffect} />,
   };
 
   return icons[iconName];
@@ -20,12 +22,7 @@ const SocialMediaIcon = ({ iconName, link, iconSize }: ISocialMedia) => {
         {!link ? (
           IconSelector(iconName, iconSize)
         ) : (
-          <a
-            className="hover:text-white"
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={link} target="_blank" rel="noopener noreferrer">
             {IconSelector(iconName, iconSize)}
           </a>
         )}

@@ -19,22 +19,31 @@ const Button = ({
     <>
       <button
         onClick={onClick}
-        className={`${className} bg-${bgColor} rounded-${btRadius} py-3 shadow-lg uppercase text-${textColor} w-${width} hover:scale-110 transition duration-300`}
+        className={`${className} bg-${bgColor} rounded-${btRadius} py-3 shadow-lg uppercase text-gray-900 w-40 hover:scale-110 transition duration-300`}
       >
         <div className="flex items-center justify-center">
-          {/* Icon to the left */}
+          {/* Add Icon to the left */}
           {!children ? null : iconSide === "left" ? children : null}
 
           {/* CTA */}
           <p
             className={`${
-              !children ? null : iconSide === "left" ? "pl-3" : "pr-3"
+              !children
+                ? null
+                : // If icon side is left, add padding left
+                iconSide === "left"
+                ? "pl-3"
+                : // If icon side is right, add padding right
+                iconSide === "right"
+                ? "pr-3"
+                : // Else, don't add any padding
+                  " "
             } font-bold tracking-wider`}
           >
             {cta}
           </p>
 
-          {/* Icon to the right */}
+          {/* Add Icon to the right */}
           {!children ? null : iconSide === "right" ? children : null}
         </div>
       </button>

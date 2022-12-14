@@ -20,7 +20,11 @@ const SocialMedia = ({ socialMedia, alignItems }: Props) => {
         <SocialMediaIconContainer alignIcon={alignItems}>
           {socialMedia.map((social) => (
             <li key={social.iconName}>
-              <SocialMediaIcon iconName={social.iconName} link={social.link} />
+              <SocialMediaIcon
+                iconName={social.iconName}
+                link={social.link}
+                iconSize={social.iconSize}
+              />
             </li>
           ))}
         </SocialMediaIconContainer>

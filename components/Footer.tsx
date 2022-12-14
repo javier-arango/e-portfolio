@@ -7,9 +7,18 @@ const socialMediaData: ISocialMedia[] = [
   {
     iconName: "linkedinIn",
     link: "http://linkedin.com/in/javier-arango",
+    iconSize: 25,
   },
-  { iconName: "github", link: "https://github.com/javier-arango" },
-  { iconName: "twitter", link: "https://twitter.com/Javier_Arango_" },
+  {
+    iconName: "github",
+    link: "https://github.com/javier-arango",
+    iconSize: 25,
+  },
+  {
+    iconName: "twitter",
+    link: "https://twitter.com/Javier_Arango_",
+    iconSize: 25,
+  },
 ];
 
 const credits: ICredits = {
