@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--color-body-primary);
+}
+
+/* Global styles */
+/* Global variables of the design system */
+@import "./variables.css";
+
+/* Set root base values */
+html {
+  /* Base font size */
+  font-size: 14px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--color-body-primary);
+  word-break: break-word;
+  background-color: var(--color-bg-primary);
+}
+
+/* -------------------------------- 
+  Typography
+  -------------------------------- */
+/* Font wait */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* Display type scale */
+.display-lg {
+  font-size: var(--text-display-lg);
+  line-height: var(--text-display-lg-line-height);
+}
+
+.display-md {
+  font-size: var(--text-display-md);
+  line-height: var(--text-display-md-line-height);
+}
+
+.display-sm {
+  font-size: var(--text-display-sm);
+  line-height: var(--text-display-sm-line-height);
+}
+
+/* Heading type scale */
+.headline-lg {
+  font-size: var(--text-headline-lg);
+  line-height: var(--text-headline-lg-line-height);
+}
+
+.headline-md {
+  font-size: var(--text-headline-md);
+  line-height: var(--text-headline-md-line-height);
+}
+
+.headline-sm {
+  font-size: var(--text-headline-sm);
+  line-height: var(--text-headline-sm-line-height);
+}
+
+/* Title type scale */
+.title-lg {
+  font-size: var(--text-title-lg);
+  line-height: var(--text-title-lg-line-height);
+}
+
+.title-md {
+  font-size: var(--text-title-md);
+  line-height: var(--text-title-md-line-height);
+}
+
+.title-sm {
+  font-size: var(--text-title-sm);
+  line-height: var(--text-title-sm-line-height);
+}
+
+/* Label type scale */
+.label-lg {
+  font-size: var(--text-label-lg);
+  line-height: var(--text-label-lg-line-height);
+}
+
+.label-md {
+  font-size: var(--text-label-md);
+  line-height: var(--text-label-md-line-height);
+}
+
+.label-sm {
+  font-size: var(--text-label-sm);
+  line-height: var(--text-label-sm-line-height);
+}
+
+/* Body type scale */
+.body-lg {
+  font-size: var(--text-body-lg);
+  line-height: var(--text-body-lg-line-height);
+}
+
+.body-md {
+  font-size: var(--text-body-md);
+  line-height: var(--text-body-md-line-height);
+}
+
+.body-sm {
+  font-size: var(--text-body-sm);
+  line-height: var(--text-body-sm-line-height);
+}

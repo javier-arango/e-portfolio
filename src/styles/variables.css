@@ -1,0 +1,106 @@
+@import "./fonts.css";
+
+:root {
+  /* -------------------------------- 
+  Colors
+  -------------------------------- */
+  --color-bg-primary: #141414;
+  --color-bg-secondary: #1c1c22;
+  --color-body-primary: #f0f2f5;
+  --color-body-secondary: #ffffff;
+  --color-gradient-primary: linear-gradient(
+    90deg,
+    #b16cea 14.06%,
+    #ff5e69 44.79%,
+    #ff8a56 71.87%,
+    #ffa84b 100%
+  );
+
+  /* -------------------------------- 
+  Typography
+  -------------------------------- */
+  --font-primary: Roboto, sans-serif;
+  --font-secondary: "Bai Jamjuree", sans-serif;
+
+  /* Base values */
+  --text-base-size: 1rem; /* 1rem = 14px */
+  --text-base-line-height: 1.5rem; /* 1.5 = 21px */
+  --text-scale-ratio: 1.125; /* Major Second scale */
+
+  /* 
+    Type scale:
+    body: p use more for paragraphs
+    label: p bigger than body for labels and small texts
+    title: Use for titles and subtitles
+    headline: Use for headlines and subheadings
+    display: Use for display text and large headlines
+  */
+  --text-body-sm: calc(var(--text-base-size) * 1);
+  --text-body-md: calc(var(--text-body-sm) * var(--text-scale-ratio));
+  --text-body-lg: calc(var(--text-body-md) * var(--text-scale-ratio));
+
+  --text-label-sm: calc(var(--text-body-lg) * var(--text-scale-ratio));
+  --text-label-md: calc(var(--text-label-sm) * var(--text-scale-ratio));
+  --text-label-lg: calc(var(--text-label-md) * var(--text-scale-ratio));
+
+  --text-title-sm: calc(var(--text-label-lg) * var(--text-scale-ratio));
+  --text-title-md: calc(var(--text-title-sm) * var(--text-scale-ratio));
+  --text-title-lg: calc(var(--text-title-md) * var(--text-scale-ratio));
+
+  --text-headline-sm: calc(var(--text-title-lg) * var(--text-scale-ratio));
+  --text-headline-md: calc(var(--text-headline-sm) * var(--text-scale-ratio));
+  --text-headline-lg: calc(var(--text-headline-md) * var(--text-scale-ratio));
+
+  --text-display-sm: calc(var(--text-headline-lg) * var(--text-scale-ratio));
+  --text-display-md: calc(var(--text-display-sm) * var(--text-scale-ratio));
+  --text-display-lg: calc(var(--text-display-md) * var(--text-scale-ratio));
+
+  /* Line height scale */
+  --text-body-sm-line-height: calc(var(--text-base-line-height) * 1);
+  --text-body-md-line-height: calc(
+    var(--text-body-sm-line-height) * var(--text-scale-ratio)
+  );
+  --text-body-lg-line-height: calc(
+    var(--text-body-md-line-height) * var(--text-scale-ratio)
+  );
+
+  --text-label-sm-line-height: calc(
+    var(--text-body-lg-line-height) * var(--text-scale-ratio)
+  );
+  --text-label-md-line-height: calc(
+    var(--text-label-sm-line-height) * var(--text-scale-ratio)
+  );
+  --text-label-lg-line-height: calc(
+    var(--text-label-md-line-height) * var(--text-scale-ratio)
+  );
+
+  --text-title-sm-line-height: calc(
+    var(--text-label-lg-line-height) * var(--text-scale-ratio)
+  );
+  --text-title-md-line-height: calc(
+    var(--text-title-sm-line-height) * var(--text-scale-ratio)
+  );
+  --text-title-lg-line-height: calc(
+    var(--text-title-md-line-height) * var(--text-scale-ratio)
+  );
+
+  --text-headline-sm-line-height: calc(
+    var(--text-title-lg-line-height) * var(--text-scale-ratio)
+  );
+  --text-headline-md-line-height: calc(
+    var(--text-headline-sm-line-height) * var(--text-scale-ratio)
+  );
+  --text-headline-lg-line-height: calc(
+    var(--text-headline-md-line-height) * var(--text-scale-ratio)
+  );
+
+  --text-display-sm-line-height: calc(
+    var(--text-headline-lg-line-height) * var(--text-scale-ratio)
+  );
+  --text-display-md-line-height: calc(
+    var(--text-display-sm-line-height) * var(--text-scale-ratio)
+  );
+  --text-display-lg-line-height: calc(
+    var(--text-display-md-line-height) * var(--text-scale-ratio)
+  );
+}

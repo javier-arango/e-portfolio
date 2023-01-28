@@ -1,0 +1,53 @@
+/* Bai Jamjuree Bold */
+@font-face {
+  font-family: "Bai Jamjuree";
+  src: url("../fonts/Bai_Jamjuree/BaiJamjuree-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Bai Jamjuree Medium */
+@font-face {
+  font-family: "Bai Jamjuree";
+  src: url("../fonts/Bai_Jamjuree/BaiJamjuree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Bai Jamjuree Regular */
+@font-face {
+  font-family: "Bai Jamjuree";
+  src: url("../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Roboto Bold */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Roboto Medium */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Roboto Regular */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
