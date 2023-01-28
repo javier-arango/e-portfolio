@@ -4,7 +4,7 @@ import { NavBar } from "../components";
 const Home: NextPage = () => {
   return (
     <>
-      <NavBar />
+      <h1>Hello there</h1>
     </>
   );
 };

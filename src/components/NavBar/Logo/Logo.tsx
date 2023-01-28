@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ISvgIcon } from "../../../lib/interfaces";
 
 // Logo SVG from Figma export
-const LogoSVG = ({ width = 100, height = 50, color = "#f0f2f5" }: ISvgIcon) => {
+const LogoSVG = ({ width = 100, height = 48, color = "#f0f2f5" }: ISvgIcon) => {
   return (
     <svg
       width={width}

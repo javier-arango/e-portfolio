@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { NavigationItem } from "./NavigationItem";
 import { INavigationItem } from "../../../lib/interfaces";
+import { navigationItemsData } from "../../../data";
 
 const NavigationStyled = {
   display: "flex",
@@ -9,30 +9,11 @@ const NavigationStyled = {
   gap: "32px",
 } as React.CSSProperties;
 
-const NavigationItemsData: INavigationItem[] = [
-  {
-    to: "/",
-    name: "Home",
-  },
-  {
-    to: "/about",
-    name: "About",
-  },
-  {
-    to: "/projects",
-    name: "Projects",
-  },
-  {
-    to: "/contact",
-    name: "Contact",
-  },
-];
-
 const Navigation = () => {
   return (
     <>
       <ul style={NavigationStyled}>
-        {NavigationItemsData.map((item) => (
+        {navigationItemsData.map((item: INavigationItem) => (
           <NavigationItem key={item.name} {...item} />
         ))}
       </ul>

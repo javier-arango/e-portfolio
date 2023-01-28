@@ -103,4 +103,84 @@
   --text-display-lg-line-height: calc(
     var(--text-display-md-line-height) * var(--text-scale-ratio)
   );
+
+  /* -------------------------------- 
+  Spacing
+  -------------------------------- */
+  /* Spacing Small */
+  --space-xx-sm: 0.25rem; /* 4px */
+  --space-x-sm: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+
+  /* Spacing Medium */
+  --space-md: 1rem; /* 16px */
+
+  /* Spacing Big */
+  --space-big: 1.25rem; /* 20px */
+  --space-x-big: 1.5rem; /* 24px */
+  --space-xx-big: 1.75rem; /* 28px */
+  --space-xxx-big: 2rem; /* 32px */
+
+  /* Spacing Large */
+  --space-lg: 2.5rem; /* 40px */
+  --space-x-lg: 3rem; /* 48px */
+  --space-xx-lg: 4rem; /* 64px */
+  --space-xxx-lg: 5rem; /* 80px */
+
+  /* Spacing Huge */
+  --space-huge: 6rem; /* 96px */
+  --space-x-huge: 8rem; /* 128px */
+  --space-xx-huge: 10rem; /* 160px */
+  --space-xxx-huge: 12rem; /* 192px */
+
+  /* -------------------------------- 
+  Layout Grid
+  -------------------------------- */
+  --layout-grid-sm: 1rem; /* 16px */
+  --layout-grid-md: 2rem; /* 32px */
+  --layout-grid-lg: 7rem; /* 112px */
+
+  /* -------------------------------- 
+  Shadows
+  -------------------------------- */
+  /* Shadows  Small */
+  --shadow-x-sm: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0px 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0px 1px 3px rgba(16, 24, 40, 0.1);
+
+  /* Shadows  Medium */
+  --shadow-md: 0px 2px 4px -2px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -1px rgba(16, 24, 40, 0.1);
+
+  /* Shadows  Large */
+  --shadow-lg: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(16, 24, 40, 0.1);
+
+  --shadow-x-lg: 0px 8px 10px -6px rgba(0, 0, 0, 0.1),
+    0px 20px 25px -5px rgba(16, 24, 40, 0.1);
+
+  --shadow-xx-lg: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* -------------------------------- 
+  Blur
+  -------------------------------- */
+  --blur-sm: blur(4px);
+  --blur-md: blur(8px);
+  --blur-lg: blur(12px);
+  --blur-x-lg: blur(20px);
+
+  /* -------------------------------- 
+  Border Radius
+  -------------------------------- */
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 32px;
+  --border-radius-x-lg: 40px;
+
+  /* -------------------------------- 
+  Dividers
+  -------------------------------- */
+  --divider-sm: 1px solid var(--color-christobel);
+  --divider-md: 2px solid var(--color-christobel);
+  --divider-lg: 8px solid var(--color-christobel);
 }

@@ -5,8 +5,9 @@ const NavBarStyled = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  height: "64px",
+
   flexWrap: "wrap",
+  padding: "16px 0",
 } as React.CSSProperties;
 
 const NavBar = () => {

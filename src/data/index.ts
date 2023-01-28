@@ -1,0 +1,1 @@
+export { navigationItemsData } from "./NavigationItemsData";
