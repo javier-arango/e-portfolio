@@ -1,3 +1,4 @@
+import { Button } from "../SharedComponents";
 import { Logo } from "./Logo";
 import { Navigation } from "./Navigation";
 
@@ -13,11 +14,10 @@ const NavBarStyled = {
 const NavBar = () => {
   return (
     <>
-      <nav style={NavBarStyled} role="navigation">
+      <nav className="margin-responsive" style={NavBarStyled} role="navigation">
         <Logo />
         <Navigation />
-
-        <button>Resume</button>
+        <Button label="Resume" onClick={() => console.log("Learn More")} />
       </nav>
     </>
   );

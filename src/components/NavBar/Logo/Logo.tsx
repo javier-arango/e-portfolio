@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ISvgIcon } from "../../../lib/interfaces";
+import { ISvgIcon } from "../../../lib";
 
 // Logo SVG from Figma export
 const LogoSVG = ({ width = 100, height = 48, color = "#f0f2f5" }: ISvgIcon) => {

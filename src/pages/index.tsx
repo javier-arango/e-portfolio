@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
-import { NavBar } from "../components";
+import { AppContainer } from "../components";
+import { Hero } from "../components";
 
 const Home: NextPage = () => {
   return (
     <>
-      <h1>Hello there</h1>
+      <AppContainer title="Software Engineer">
+        <Hero />
+      </AppContainer>
     </>
   );
 };

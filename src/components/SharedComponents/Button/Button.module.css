@@ -1,0 +1,65 @@
+/* Large Button | Default */
+.button {
+  display: inline-block;
+  text-align: center;
+  border-radius: var(--border-radius-x-lg);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  user-select: none;
+  padding: var(--space-big) var(--space-xxx-big);
+
+  /* Ripple Effect */
+  background-position: center;
+  transition: background 0.8s;
+}
+
+/* Primary Button */
+.primaryButton {
+  color: var(--color-body-primary);
+  background: var(--color-gradient-primary);
+}
+
+/* Secondary Button */
+.secondaryButton {
+  color: var(--color-body-primary);
+  background: none;
+  border: 2px solid var(--color-body-secondary);
+}
+
+/* Primary Button Hover */
+.primaryButton:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+    center/15000%;
+}
+
+/* Secondary Button Hover */
+.secondaryButton:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+    center/15000%;
+  border-color: var(--color-button-hover);
+  color: var(--color-button-hover);
+}
+
+.primaryButton:active,
+.secondaryButton:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 600px) and (max-width: 1135px) {
+  /* Medium Button */
+  .button {
+    padding: var(--space-sm) var(--space-xxx-big);
+  }
+}
+
+/* Small Screen - Mobile */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  /* Small Button */
+  .button {
+    padding: var(--space-x-sm) var(--space-x-big);
+  }
+}

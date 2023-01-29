@@ -1,6 +1,6 @@
 import styles from "./NavigationItem.module.css";
 import Link from "next/link";
-import { INavigationItem } from "../../../../lib/interfaces";
+import { INavigationItem } from "../../../lib/interfaces";
 import { useRouter } from "next/router";
 
 /**

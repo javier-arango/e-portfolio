@@ -1,9 +1,10 @@
-import { NavigationItem } from "./NavigationItem";
-import { INavigationItem } from "../../../lib/interfaces";
+import { NavigationItem } from "../NavigationItem";
+import { INavigationItem } from "../../../lib";
 import { navigationItemsData } from "../../../data";
 
 const NavigationStyled = {
   display: "flex",
+  flexWrap: "wrap",
   justifyContent: "space-between",
   alignItems: "center",
   gap: "32px",

@@ -108,37 +108,37 @@
   Spacing
   -------------------------------- */
   /* Spacing Small */
-  --space-xx-sm: 0.25rem; /* 4px */
-  --space-x-sm: 0.5rem; /* 8px */
-  --space-sm: 0.75rem; /* 12px */
+  --space-xx-sm: 0.286rem; /* 4px */
+  --space-x-sm: 0.571rem; /* 8px */
+  --space-sm: 0.857rem; /* 12px */
 
   /* Spacing Medium */
-  --space-md: 1rem; /* 16px */
+  --space-md: 1rem; /* 14px */
 
   /* Spacing Big */
-  --space-big: 1.25rem; /* 20px */
-  --space-x-big: 1.5rem; /* 24px */
-  --space-xx-big: 1.75rem; /* 28px */
-  --space-xxx-big: 2rem; /* 32px */
+  --space-big: 1.429rem; /* 20px */
+  --space-x-big: 1.714rem; /* 24px */
+  --space-xx-big: 2rem; /* 28px */
+  --space-xxx-big: 2.286rem; /* 32px */
 
   /* Spacing Large */
-  --space-lg: 2.5rem; /* 40px */
-  --space-x-lg: 3rem; /* 48px */
-  --space-xx-lg: 4rem; /* 64px */
-  --space-xxx-lg: 5rem; /* 80px */
+  --space-lg: 2.857rem; /* 40px */
+  --space-x-lg: 3.429rem; /* 48px */
+  --space-xx-lg: 4.571rem; /* 64px */
+  --space-xxx-lg: 5.714rem; /* 80px */
 
   /* Spacing Huge */
-  --space-huge: 6rem; /* 96px */
-  --space-x-huge: 8rem; /* 128px */
-  --space-xx-huge: 10rem; /* 160px */
-  --space-xxx-huge: 12rem; /* 192px */
+  --space-huge: 6.857rem; /* 96px */
+  --space-x-huge: 9.143rem; /* 128px */
+  --space-xx-huge: 11.429rem; /* 160px */
+  --space-xxx-huge: 13.714rem; /* 192px */
 
   /* -------------------------------- 
   Layout Grid
   -------------------------------- */
-  --layout-grid-sm: 1rem; /* 16px */
-  --layout-grid-md: 2rem; /* 32px */
-  --layout-grid-lg: 7rem; /* 112px */
+  --layout-grid-sm: 1.143rem; /* 16px */
+  --layout-grid-md: 2.286rem; /* 32px */
+  --layout-grid-lg: 8rem; /* 112px */
 
   /* -------------------------------- 
   Shadows
